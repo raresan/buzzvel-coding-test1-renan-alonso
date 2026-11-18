@@ -5,6 +5,7 @@ import './globals.css'
 import { data } from './data'
 
 import Header from './components/sections/Header'
+import Footer from './components/sections/Footer'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,6 +32,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <Header data={data.header} />
 
         <main className="flex-1">{children}</main>
+
+        <Footer data={data.footer} />
       </body>
     </html>
   )

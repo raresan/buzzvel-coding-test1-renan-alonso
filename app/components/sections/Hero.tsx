@@ -33,7 +33,7 @@ export default function Hero({ data }: HeroProps) {
   return (
     <section className="bg-green-500">
       <div>
-        <h2>{data.eyebrow}</h2>
+        <h3>{data.eyebrow}</h3>
         <h1>{data.title}</h1>
 
         <p>{data.description}</p>
@@ -69,6 +69,7 @@ export default function Hero({ data }: HeroProps) {
           alt={data.heroImage.alt}
           width={500}
           height={520}
+          priority
         />
         <div>
           <div>{data.upperBadgeHighlight}</div>

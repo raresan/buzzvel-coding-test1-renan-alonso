@@ -15,7 +15,7 @@ export default function Header({ data }: HeaderProps) {
   return (
     <header className="bg-red-500">
       <div>
-        <h1>{data.logoText}</h1>
+        <h4>{data.logoText}</h4>
       </div>
 
       <nav>
