@@ -33,15 +33,19 @@ export const data = {
     socialProof: {
       highlightText: 'Trusted by 24,000+',
       text: 'learners',
-      avatars: ['avatar-1.jpg', 'avatar-2.jpg', 'avatar-3.jpg'],
+      avatars: [
+        '/images/user-pic1.jpg',
+        '/images/user-pic2.jpg',
+        '/images/user-pic3.jpg',
+      ],
     },
     heroImage: {
-      src: '/hero-student.jpg',
-      alt: 'Student learning online',
-      upperBadgeHighlight: '120+',
-      upperBadgeText: 'expert-led courses',
-      lowerBadgeText: '4.9 avg rating',
+      src: '/images/person-focused-on-learning.jpg',
+      alt: 'Person focused on learning',
     },
+    upperBadgeHighlight: '120+',
+    upperBadgeText: 'expert-led courses',
+    lowerBadgeText: '4.9 avg rating',
   },
 
   categories: {
