@@ -31,7 +31,7 @@ interface HeroProps {
 
 export default function Hero({ data }: HeroProps) {
   return (
-    <section>
+    <section className="bg-green-500">
       <div>
         <h2>{data.eyebrow}</h2>
         <h1>{data.title}</h1>
