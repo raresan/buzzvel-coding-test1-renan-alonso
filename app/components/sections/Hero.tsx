@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
 
-import { ClickableProps } from '../ui/Clickable'
+import type { ClickableProps } from '../ui/Clickable'
 
 import Clickable from '../ui/Clickable'
 

@@ -1,4 +1,4 @@
-import { ClickableProps } from '../ui/Clickable'
+import type { ClickableProps } from '../ui/Clickable'
 
 import Clickable from '../ui/Clickable'
 
@@ -19,7 +19,7 @@ export default function Footer({ data }: FooterProps) {
     <footer className="bg-black">
       <div>
         <div>
-          <h4>{data.logoText}</h4>
+          <div>{data.logoText}</div>
 
           <p>{data.slogan}</p>
         </div>

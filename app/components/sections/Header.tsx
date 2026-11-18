@@ -1,4 +1,4 @@
-import { ClickableProps } from '../ui/Clickable'
+import type { ClickableProps } from '../ui/Clickable'
 
 import Clickable from '../ui/Clickable'
 
@@ -14,9 +14,7 @@ interface HeaderProps {
 export default function Header({ data }: HeaderProps) {
   return (
     <header className="bg-red-500">
-      <div>
-        <h4>{data.logoText}</h4>
-      </div>
+      <div>{data.logoText}</div>
 
       <nav>
         <ul>
