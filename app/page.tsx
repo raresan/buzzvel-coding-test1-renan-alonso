@@ -18,7 +18,7 @@ export default function Home() {
       <HowItWorks data={data.howItWorks} />
       <Testimonial data={data.testimonial} />
       <Community data={data.community} />
-      <Contact />
+      <Contact data={data.contact} />
       <CallToAction />
     </>
   )
