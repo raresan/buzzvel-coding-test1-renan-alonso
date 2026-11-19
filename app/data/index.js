@@ -107,9 +107,10 @@ export const data = {
       href: '#browse-all-courses',
     },
     courseImage: {
-      src: '/featured-product.jpg',
-      alt: 'Product design workspace',
+      src: '/images/product-design-course.jpg',
+      alt: 'Product design course',
     },
+    badgeLabel: 'Featured Course',
   },
 
   howItWorks: {

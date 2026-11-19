@@ -1,8 +1,7 @@
 import type { CategoryCardProps } from '../ui/CategoryCard'
 
 import CategoryCard from '../ui/CategoryCard'
-
-type CategoriesProps = {
+interface CategoriesProps {
   data: {
     eyebrow: string
     title: string
