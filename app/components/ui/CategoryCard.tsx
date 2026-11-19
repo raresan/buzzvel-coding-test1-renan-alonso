@@ -14,7 +14,7 @@ export default function CategoryCard({
   href,
 }: CategoryCardProps) {
   return (
-    <div className="bg-blue-800">
+    <div>
       <div>{id}</div>
 
       <h4>{title}</h4>
