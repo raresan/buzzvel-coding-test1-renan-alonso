@@ -166,7 +166,7 @@ export const data = {
       href: '#community',
     },
     communityImage: {
-      src: '/community.jpg',
+      src: '/images/community.png',
       alt: 'Community photo',
     },
   },

@@ -17,7 +17,7 @@ export default function Home() {
       <FeaturedCourse data={data.featuredCourse} />
       <HowItWorks data={data.howItWorks} />
       <Testimonial data={data.testimonial} />
-      <Community />
+      <Community data={data.community} />
       <Contact />
       <CallToAction />
     </>
