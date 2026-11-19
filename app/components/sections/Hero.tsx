@@ -1,5 +1,4 @@
-import { StaticImageData } from 'next/image'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 import type { ClickableProps } from '../ui/Clickable'
 

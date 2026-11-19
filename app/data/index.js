@@ -147,7 +147,7 @@ export const data = {
     author: {
       name: 'Alex Morgan',
       role: 'Product Manager',
-      avatar: 'alex-avatar.jpg',
+      avatar: '/images/alex-morgan.jpg',
     },
     metrics: [
       { value: '24K+', label: 'active learners' },
