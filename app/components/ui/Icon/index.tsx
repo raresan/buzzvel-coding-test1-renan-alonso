@@ -1,18 +1,18 @@
 import type { ComponentType, SVGProps } from 'react'
 import Logo from './Logo'
+import Menu from './Menu'
 
 const ICONS = {
   logo: Logo,
+  menu: Menu,
 } as const satisfies Record<string, ComponentType<SVGProps<SVGSVGElement>>>
 
-export type IconName = keyof typeof ICONS
-
 export interface IconProps extends SVGProps<SVGSVGElement> {
-  name: IconName
+  name: string
 }
 
-export function Icon({ name, className, ...props }: IconProps) {
-  const IconComponent = ICONS[name]
+export default function Icon({ name, className, ...props }: IconProps) {
+  const IconComponent = ICONS[name as keyof typeof ICONS]
 
   if (!IconComponent) {
     return null

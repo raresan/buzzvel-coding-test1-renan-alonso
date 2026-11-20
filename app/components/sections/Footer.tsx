@@ -4,7 +4,7 @@ import Clickable from '../ui/Clickable'
 
 interface FooterProps {
   data: {
-    logoText: string
+    logo: string
     slogan: string
     columns: {
       title: string
@@ -20,7 +20,7 @@ export default function Footer({ data }: FooterProps) {
       <div className="section-container pb-5 lg:pt-20 lg:pb-10">
         <div>
           <div>
-            <div>{data.logoText}</div>
+            <div></div>
 
             <p>{data.slogan}</p>
           </div>

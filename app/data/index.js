@@ -1,6 +1,6 @@
 export const data = {
   header: {
-    logoText: 'luma.',
+    logo: 'logo',
     navLinks: [
       { label: 'Courses', href: '#courses' },
       { label: 'For Teams', href: '#for-teams' },
@@ -215,7 +215,7 @@ export const data = {
   },
 
   footer: {
-    logoText: 'luma.',
+    logo: 'logo',
     slogan: 'Practical learning for curious people.',
     columns: [
       {
