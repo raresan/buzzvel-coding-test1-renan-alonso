@@ -56,7 +56,9 @@ export default function Hero({ data }: HeroProps) {
                   alt="User picture"
                   width={32}
                   height={32}
-                  className="border-2 border-light-yellow rounded-full -ml-2 first:ml-0"
+                  aria-hidden="true"
+                  draggable={false}
+                  className="pointer-events-none select-none border-2 border-light-yellow rounded-full -ml-2 first:ml-0"
                 />
               ))}
             </div>
@@ -77,7 +79,9 @@ export default function Hero({ data }: HeroProps) {
             fill
             objectFit="contain"
             priority
-            className="lg:hidden"
+            aria-hidden="true"
+            draggable={false}
+            className="pointer-events-none select-none lg:hidden"
           />
 
           <Image
@@ -86,7 +90,9 @@ export default function Hero({ data }: HeroProps) {
             fill
             objectFit="contain"
             priority
-            className="hidden lg:block"
+            aria-hidden="true"
+            draggable={false}
+            className="pointer-events-none select-none hidden lg:block"
           />
 
           <div className="bg-white rounded-xl absolute top-1.5 lg:top-4 left-2 lg:left-5.5 py-3 px-4 flex gap-3 items-center shadow-[0px_4px_24px_0px_#0000001A]">

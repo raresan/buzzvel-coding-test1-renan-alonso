@@ -39,7 +39,10 @@ export default function FeaturedCourse({ data }: FeatureCourseProps) {
               src={data.courseImage.src}
               alt={data.courseImage.alt}
               fill
-              className="object-cover"
+              objectFit="cover"
+              aria-hidden="true"
+              draggable={false}
+              className="pointer-events-none select-none"
             />
           </div>
         </div>

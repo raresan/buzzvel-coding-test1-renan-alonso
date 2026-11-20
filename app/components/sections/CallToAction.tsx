@@ -37,7 +37,9 @@ export default function CallToAction({ data }: CallToActionProps) {
               alt="User picture"
               width={40}
               height={40}
-              className="border-2 border-secondary-yellow rounded-full -ml-2 first:ml-0"
+              aria-hidden="true"
+              draggable={false}
+              className="pointer-events-none select-none border-2 border-secondary-yellow rounded-full -ml-2 first:ml-0"
             />
           ))}
         </div>
