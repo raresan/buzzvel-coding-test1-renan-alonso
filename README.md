@@ -95,7 +95,7 @@ pnpm lint    # run ESLint
 I used AI tools to help automate a few specific, lower-stakes parts of the project:
 
 - **Google Gemini** — Used to generate initial mock data and some boilerplate HTML structure scaffolding
-- **Amazon Q** — Used to assist with parts that required more direct access to the project, such as complementing this README
+- **Amazon Q** — Used to assist with parts that required more direct access to the project, such as writing this README, generating the page metadata and favicon
 
 That said, everything AI produced was reviewed and adjusted by me before being committed. No output was left as-is. The visual implementation — layout, spacing, typography, responsiveness, component architecture — was done entirely by hand. AI involvement accounts for roughly 10% of the overall work.
 
