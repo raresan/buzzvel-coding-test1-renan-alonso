@@ -41,6 +41,7 @@ export const data = {
     },
     heroImage: {
       src: '/images/person-focused-on-learning.png',
+      srcMobile: '/images/person-focused-on-learning-mobile.png',
       alt: 'Person focused on learning',
     },
     upperBadgeHighlight: '120+',

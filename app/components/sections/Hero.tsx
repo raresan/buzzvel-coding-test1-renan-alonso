@@ -20,6 +20,7 @@ interface HeroProps {
     socialProof: SocialProof
     heroImage: {
       src: StaticImageData | string
+      srcMobile: StaticImageData | string
       alt: string
     }
     upperBadgeHighlight: string
@@ -34,11 +35,11 @@ export default function Hero({ data }: HeroProps) {
       <div className="section-container flex flex-col-reverse lg:flex-row gap-10 lg:gap-4">
         <div>
           <h3>{data.eyebrow}</h3>
-          <h1>{data.title}</h1>
+          <h1 className="mt-4">{data.title}</h1>
 
-          <p>{data.description}</p>
+          <p className="mt-6">{data.description}</p>
 
-          <div>
+          <div className="mt-8 flex flex-col lg:flex-row items-center gap-3">
             <Button href={data.primaryCta.href}>{data.primaryCta.label}</Button>
 
             <Button href={data.secondaryCta.href} variant="secondary">
@@ -46,8 +47,8 @@ export default function Hero({ data }: HeroProps) {
             </Button>
           </div>
 
-          <div>
-            <div>
+          <div className="flex items-center justify-center lg:justify-start mt-8 gap-3">
+            <div className="flex items-center">
               {data.socialProof.avatars.map((avatar, index) => (
                 <Image
                   key={index}
@@ -55,27 +56,40 @@ export default function Hero({ data }: HeroProps) {
                   alt="User picture"
                   width={32}
                   height={32}
+                  className="border-2 border-light-yellow rounded-full -ml-2 first:ml-0"
                 />
               ))}
             </div>
 
-            <p>
-              <strong>{data.socialProof.highlightText}</strong>{' '}
+            <p className="text-sm">
+              <strong className="text-ink-primary font-bold">
+                {data.socialProof.highlightText}
+              </strong>{' '}
               {data.socialProof.text}
             </p>
           </div>
         </div>
 
-        <div className="relative lg:w-146 aspect-[1.12] shrink-0 -mr-4.5 lg:-mr-10">
+        <div className="relative lg:w-146 aspect-square lg:aspect-[1.12] shrink-0 -mx-2.5 lg:-mr-10 lg:ml-0">
+          <Image
+            src={data.heroImage.srcMobile}
+            alt={data.heroImage.alt}
+            fill
+            objectFit="contain"
+            priority
+            className="lg:hidden"
+          />
+
           <Image
             src={data.heroImage.src}
             alt={data.heroImage.alt}
             fill
             objectFit="contain"
             priority
+            className="hidden lg:block"
           />
 
-          <div className="bg-white rounded-xl absolute top-2 left-6 py-3 px-4 flex gap-3 items-center">
+          <div className="bg-white rounded-xl absolute top-1.5 lg:top-4 left-2 lg:left-5.5 py-3 px-4 flex gap-3 items-center shadow-[0px_4px_24px_0px_#0000001A]">
             <div className="bg-primary-blue-light rounded-lg p-1 font-bold text-sm text-primary-blue">
               {data.upperBadgeHighlight}
             </div>
@@ -85,8 +99,8 @@ export default function Hero({ data }: HeroProps) {
             </span>
           </div>
 
-          <div className="absolute bottom-0 right-0 bg-white rounded-xl py-3 px-4">
-            <div className="relative h-3.5">
+          <div className="absolute bottom-9 right-0 lg:-right-4.5 bg-white rounded-xl py-3 px-4 flex items-center gap-2 shadow-[0px_4px_24px_0px_#0000001A]">
+            <div className="relative w-19.5 h-3.5">
               <Image
                 src="/images/rating-stars.png"
                 alt="Rating Stars"
@@ -95,7 +109,7 @@ export default function Hero({ data }: HeroProps) {
               />
             </div>
 
-            <span className="text-sm text-ink-primary">
+            <span className="text-sm text-ink-primary whitespace-nowrap">
               {data.lowerBadgeText}
             </span>
           </div>
