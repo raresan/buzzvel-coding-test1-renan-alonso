@@ -20,23 +20,25 @@ interface CommunityProps {
 export default function Community({ data }: CommunityProps) {
   return (
     <section className="bg-light-yellow">
-      <div>
-        <h3>{data.eyebrow}</h3>
-        <h2>{data.title}</h2>
-        <p>{data.description}</p>
+      <div className="section-container">
+        <div>
+          <h3>{data.eyebrow}</h3>
+          <h2>{data.title}</h2>
+          <p>{data.description}</p>
+
+          <div>
+            <Clickable {...data.cta} />
+          </div>
+        </div>
 
         <div>
-          <Clickable {...data.cta} />
+          <Image
+            src={data.communityImage.src}
+            alt={data.communityImage.alt}
+            width={530}
+            height={522}
+          />
         </div>
-      </div>
-
-      <div>
-        <Image
-          src={data.communityImage.src}
-          alt={data.communityImage.alt}
-          width={530}
-          height={522}
-        />
       </div>
     </section>
   )

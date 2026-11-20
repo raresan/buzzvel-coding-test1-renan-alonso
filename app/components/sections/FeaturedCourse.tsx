@@ -27,37 +27,39 @@ interface FeatureCourseProps {
 export default function FeaturedCourse({ data }: FeatureCourseProps) {
   return (
     <section className="bg-primary-blue text-white">
-      <div>
-        <div>{data.badgeLabel}</div>
+      <div className="section-container">
+        <div>
+          <div>{data.badgeLabel}</div>
 
-        <Image
-          src={data.courseImage.src}
-          alt={data.courseImage.alt}
-          width={538}
-          height={408}
-        />
-      </div>
-
-      <div>
-        <h3>{data.eyebrow}</h3>
-
-        <h2>{data.title}</h2>
-
-        <p>{data.description}</p>
-
-        <p>
-          with {data.author.name} · {data.author.title}
-        </p>
-
-        <ul>
-          {data.labels.map((label, index) => (
-            <li key={index}>{label}</li>
-          ))}
-        </ul>
+          <Image
+            src={data.courseImage.src}
+            alt={data.courseImage.alt}
+            width={538}
+            height={408}
+          />
+        </div>
 
         <div>
-          <Clickable {...data.primaryCta} />
-          <Clickable {...data.secondaryCta} />
+          <h3>{data.eyebrow}</h3>
+
+          <h2>{data.title}</h2>
+
+          <p>{data.description}</p>
+
+          <p>
+            with {data.author.name} · {data.author.title}
+          </p>
+
+          <ul>
+            {data.labels.map((label, index) => (
+              <li key={index}>{label}</li>
+            ))}
+          </ul>
+
+          <div>
+            <Clickable {...data.primaryCta} />
+            <Clickable {...data.secondaryCta} />
+          </div>
         </div>
       </div>
     </section>

@@ -14,21 +14,23 @@ interface HeaderProps {
 export default function Header({ data }: HeaderProps) {
   return (
     <header className="bg-light-yellow border-b border-line">
-      <div>{data.logoText}</div>
+      <div className="section-container">
+        <div>{data.logoText}</div>
 
-      <nav>
-        <ul>
-          {data.navLinks.map((link, index) => (
-            <li key={index}>
-              <Clickable {...link} />
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            {data.navLinks.map((link, index) => (
+              <li key={index}>
+                <Clickable {...link} />
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-      <div>
-        <Clickable {...data.login} />
-        <Clickable {...data.ctaButton} />
+        <div>
+          <Clickable {...data.login} />
+          <Clickable {...data.ctaButton} />
+        </div>
       </div>
     </header>
   )

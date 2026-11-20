@@ -13,14 +13,16 @@ interface CategoriesProps {
 export default function Categories({ data }: CategoriesProps) {
   return (
     <section className="bg-white">
-      <h3>{data.eyebrow}</h3>
-      <h2>{data.title}</h2>
-      <p>{data.description}</p>
+      <div className="section-container">
+        <h3>{data.eyebrow}</h3>
+        <h2>{data.title}</h2>
+        <p>{data.description}</p>
 
-      <div>
-        {data.items.map((item, index) => (
-          <CategoryCard key={index} {...item} />
-        ))}
+        <div>
+          {data.items.map((item, index) => (
+            <CategoryCard key={index} {...item} />
+          ))}
+        </div>
       </div>
     </section>
   )

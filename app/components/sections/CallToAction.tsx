@@ -14,7 +14,7 @@ interface CallToActionProps {
 export default function CallToAction({ data }: CallToActionProps) {
   return (
     <section className="bg-yellow">
-      <div>
+      <div className="section-container">
         <div></div>
 
         <h2>{data.title}</h2>

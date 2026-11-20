@@ -31,52 +31,54 @@ interface HeroProps {
 export default function Hero({ data }: HeroProps) {
   return (
     <section className="bg-light-yellow">
-      <div>
-        <h3>{data.eyebrow}</h3>
-        <h1>{data.title}</h1>
-
-        <p>{data.description}</p>
-
+      <div className="section-container">
         <div>
-          <Clickable {...data.primaryCta} />
-          <Clickable {...data.secondaryCta} />
-        </div>
+          <h3>{data.eyebrow}</h3>
+          <h1>{data.title}</h1>
 
-        <div>
+          <p>{data.description}</p>
+
           <div>
-            {data.socialProof.avatars.map((avatar, index) => (
-              <Image
-                key={index}
-                src={avatar}
-                alt="User picture"
-                width={32}
-                height={32}
-              />
-            ))}
+            <Clickable {...data.primaryCta} />
+            <Clickable {...data.secondaryCta} />
           </div>
 
-          <p>
-            <strong>{data.socialProof.highlightText}</strong>{' '}
-            {data.socialProof.text}
-          </p>
-        </div>
-      </div>
+          <div>
+            <div>
+              {data.socialProof.avatars.map((avatar, index) => (
+                <Image
+                  key={index}
+                  src={avatar}
+                  alt="User picture"
+                  width={32}
+                  height={32}
+                />
+              ))}
+            </div>
 
-      <div>
-        <Image
-          src={data.heroImage.src}
-          alt={data.heroImage.alt}
-          width={500}
-          height={520}
-          priority
-        />
-        <div>
-          <div>{data.upperBadgeHighlight}</div>
-          <span>{data.upperBadgeText}</span>
+            <p>
+              <strong>{data.socialProof.highlightText}</strong>{' '}
+              {data.socialProof.text}
+            </p>
+          </div>
         </div>
 
         <div>
-          <span>{data.lowerBadgeText}</span>
+          <Image
+            src={data.heroImage.src}
+            alt={data.heroImage.alt}
+            width={500}
+            height={520}
+            priority
+          />
+          <div>
+            <div>{data.upperBadgeHighlight}</div>
+            <span>{data.upperBadgeText}</span>
+          </div>
+
+          <div>
+            <span>{data.lowerBadgeText}</span>
+          </div>
         </div>
       </div>
     </section>
