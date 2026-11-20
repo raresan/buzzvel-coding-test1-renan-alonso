@@ -27,44 +27,53 @@ interface FeatureCourseProps {
 export default function FeaturedCourse({ data }: FeatureCourseProps) {
   return (
     <section className="bg-primary-blue text-white">
-      <div className="section-container">
-        <div>
-          <div>{data.badgeLabel}</div>
+      <div className="section-container grid grid-cols-1 lg:grid-cols-2 items-center gap-9.5 lg:gap-15">
+        <div className="relative">
+          <div className="text-xs tracking-[0.12em] uppercase font-semibold text-ink-primary bg-secondary-yellow py-1.5 px-3 rounded-md absolute -top-3 -left-3 z-1">
+            {data.badgeLabel}
+          </div>
 
-          <Image
-            src={data.courseImage.src}
-            alt={data.courseImage.alt}
-            width={538}
-            height={408}
-          />
+          <div className="rounded-2xl relative overflow-hidden w-full aspect-[1.3]">
+            <Image
+              src={data.courseImage.src}
+              alt={data.courseImage.alt}
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div>
-          <h3>{data.eyebrow}</h3>
+          <h3 className="text-white">{data.eyebrow}</h3>
 
-          <h2>{data.title}</h2>
+          <h2 className="text-white mt-4">{data.title}</h2>
 
-          <p>{data.description}</p>
+          <p className="mt-5 text-sm lg:text-base leading-[1.7] lg:leading-[1.75]">
+            {data.description}
+          </p>
 
-          <p>
+          <p className="mt-6 text-sm lg:text-base leading-[1.7] lg:leading-[1.75]">
             with {data.author.name} · {data.author.title}
           </p>
 
-          <ul>
+          <ul className="mt-6 flex gap-3 flex-wrap">
             {data.labels.map((label, index) => (
-              <li key={index}>{label}</li>
+              <li
+                key={index}
+                className="border border-line h-9.5 px-3.5 flex items-center rounded-lg whitespace-nowrap"
+              >
+                {label}
+              </li>
             ))}
           </ul>
 
-          <div>
+          <div className="mt-8 flex flex-col lg:flex-row gap-3">
             <Button href={data.primaryCta.href} variant="tertiary">
               {data.primaryCta.label}
-              {/* <Icon name="arrow" /> */}
             </Button>
 
             <Button href={data.secondaryCta.href} variant="ghost">
               {data.secondaryCta.label}
-
               {/* <Icon name="arrow" /> */}
             </Button>
           </div>
