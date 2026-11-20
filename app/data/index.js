@@ -206,6 +206,12 @@ export const data = {
   callToAction: {
     title: 'What will you learn next?',
     subtitle: 'Start with one course. Build from there.',
+    avatars: [
+      '/images/user-pic1.jpg',
+      '/images/user-pic2.jpg',
+      '/images/user-pic3.jpg',
+      '/images/user-pic4.jpg',
+    ],
     primaryCta: {
       label: 'Explore all courses',
       href: '#explore-all-courses',
