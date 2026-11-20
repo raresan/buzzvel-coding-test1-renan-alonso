@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import type { ClickableProps } from '../ui/Clickable'
 
 import Button from '../ui/Button'
+import Icon from '../ui/Icon'
 
 interface FeatureCourseProps {
   data: {
@@ -72,9 +73,16 @@ export default function FeaturedCourse({ data }: FeatureCourseProps) {
               {data.primaryCta.label}
             </Button>
 
-            <Button href={data.secondaryCta.href} variant="ghost">
+            <Button
+              href={data.secondaryCta.href}
+              variant="ghost"
+              className="flex items-center gap-2"
+            >
               {data.secondaryCta.label}
-              {/* <Icon name="arrow" /> */}
+
+              <div className="size-5 p-1">
+                <Icon name="arrow" />
+              </div>
             </Button>
           </div>
         </div>

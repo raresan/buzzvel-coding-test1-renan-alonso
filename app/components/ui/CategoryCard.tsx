@@ -1,4 +1,5 @@
 import Clickable from './Clickable'
+import Icon from './Icon'
 
 export interface CategoryCardProps {
   id: string
@@ -33,9 +34,13 @@ export default function CategoryCard({
 
       <Clickable
         href={href}
-        className="text-ink-primary font-bold text-sm leading-[1.7]"
+        className="text-ink-primary font-bold text-sm leading-[1.7] flex items-center gap-2"
       >
         {linkText}
+
+        <div className="size-5 p-1">
+          <Icon name="arrow" />
+        </div>
       </Clickable>
     </div>
   )
