@@ -26,7 +26,7 @@ interface ContactProps {
 
 export default function Contact({ data }: ContactProps) {
   return (
-    <section className="bg-rose-500">
+    <section className="bg-white">
       <div>
         <h3>{data.eyebrow}</h3>
         <h2>{data.title}</h2>

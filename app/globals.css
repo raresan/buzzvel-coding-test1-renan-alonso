@@ -1,10 +1,10 @@
 @import 'tailwindcss';
 
 :root {
-  --background-light-yellow: #f9f8f3;
-  --background-orange: #ffcb9f;
-  --background-yellow: #fff1c2;
-  --background-dark-blue: #171b2c;
+  --light-yellow: #f9f8f3;
+  --orange: #ffcb9f;
+  --yellow: #fff1c2;
+  --dark-blue: #171b2c;
 
   --primary-blue: #3157f6;
   --primary-blue-light: #e2e8ff;
@@ -13,15 +13,64 @@
 
   --secondary-yellow: #ffee7e;
 
-  --text-primary: #171b2c;
-  --text-secondary: #656770;
-  --text-tertiary: #6d7384;
+  --ink-primary: #171b2c;
+  --ink-secondary: #656770;
+  --ink-tertiary: #6d7384;
 
-  --text-white-secondary: #e7e7ec;
-  --text-white-tertiary: #9e9faa;
+  --ink-white-secondary: #e7e7ec;
+  --ink-white-tertiary: #9e9faa;
 
   --line: #dbdfeb;
 }
 
 @theme inline {
+  --color-light-yellow: var(--light-yellow);
+  --color-orange: var(--orange);
+  --color-yellow: var(--yellow);
+  --color-dark-blue: var(--dark-blue);
+
+  --color-primary-blue: var(--primary-blue);
+  --color-primary-blue-light: var(--primary-blue-light);
+  --color-primary-orange: var(--primary-orange);
+  --color-primary-yellow: var(--primary-yellow);
+
+  --color-secondary-yellow: var(--secondary-yellow);
+
+  --color-ink-primary: var(--ink-primary);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-tertiary: var(--ink-tertiary);
+
+  --color-ink-white-secondary: var(--ink-white-secondary);
+  --color-ink-white-tertiary: var(--ink-white-tertiary);
+
+  --color-line: var(--line);
+
+  --font-inter: var(--font-inter-sans), Arial, Helvetica, sans-serif;
+  --font-jakarta: var(--font-plus-jakarta-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-inter font-normal text-ink-secondary;
+  }
+
+  h1 {
+    @apply font-jakarta font-extrabold text-[4rem] leading-[1.1] tracking-tight text-ink-primary;
+  }
+
+  h2 {
+    @apply font-jakarta font-extrabold text-5xl leading-[1.17] tracking-tight text-ink-primary;
+  }
+
+  h3 {
+    @apply font-semibold text-xs leading-[1.34] tracking-[0.12em] uppercase text-primary-blue;
+  }
+
+  h4 {
+    @apply font-jakarta font-bold text-xl leading-[1.6] text-ink-primary;
+  }
+
+  h5 {
+    @apply font-semibold text-xs leading-[1.34] tracking-[0.12em] uppercase text-ink-tertiary;
+  }
 }

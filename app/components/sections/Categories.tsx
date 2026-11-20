@@ -12,7 +12,7 @@ interface CategoriesProps {
 
 export default function Categories({ data }: CategoriesProps) {
   return (
-    <section className="bg-blue-500">
+    <section className="bg-white">
       <h3>{data.eyebrow}</h3>
       <h2>{data.title}</h2>
       <p>{data.description}</p>

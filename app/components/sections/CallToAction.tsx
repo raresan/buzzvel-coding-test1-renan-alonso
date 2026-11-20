@@ -13,7 +13,7 @@ interface CallToActionProps {
 
 export default function CallToAction({ data }: CallToActionProps) {
   return (
-    <section className="bg-indigo-500">
+    <section className="bg-yellow">
       <div>
         <div></div>
 

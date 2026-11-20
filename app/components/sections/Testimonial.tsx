@@ -18,7 +18,7 @@ interface TestimonialProps {
 
 export default function Testimonial({ data }: TestimonialProps) {
   return (
-    <section className="bg-amber-500">
+    <section className="bg-white">
       <div>
         <div>
           <span aria-hidden="true">“</span>

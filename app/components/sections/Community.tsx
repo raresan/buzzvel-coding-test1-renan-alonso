@@ -19,7 +19,7 @@ interface CommunityProps {
 
 export default function Community({ data }: CommunityProps) {
   return (
-    <section className="bg-cyan-500">
+    <section className="bg-light-yellow">
       <div>
         <h3>{data.eyebrow}</h3>
         <h2>{data.title}</h2>

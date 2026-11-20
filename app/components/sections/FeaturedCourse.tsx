@@ -26,7 +26,7 @@ interface FeatureCourseProps {
 
 export default function FeaturedCourse({ data }: FeatureCourseProps) {
   return (
-    <section className="bg-yellow-500">
+    <section className="bg-primary-blue text-white">
       <div>
         <div>{data.badgeLabel}</div>
 

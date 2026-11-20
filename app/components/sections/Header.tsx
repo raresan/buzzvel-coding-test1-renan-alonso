@@ -13,7 +13,7 @@ interface HeaderProps {
 
 export default function Header({ data }: HeaderProps) {
   return (
-    <header className="bg-red-500">
+    <header className="bg-light-yellow border-b border-line">
       <div>{data.logoText}</div>
 
       <nav>

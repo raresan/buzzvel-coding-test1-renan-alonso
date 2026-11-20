@@ -15,7 +15,7 @@ interface HowItWorksProps {
 
 export default function HowItWorks({ data }: HowItWorksProps) {
   return (
-    <section className="bg-gray-500">
+    <section className="bg-light-yellow">
       <div>
         <h3>{data.eyebrow}</h3>
         <h2>{data.title}</h2>
