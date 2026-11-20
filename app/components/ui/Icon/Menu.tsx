@@ -11,8 +11,8 @@ export default function Menu({ className, ...props }: SVGProps<SVGSVGElement>) {
     >
       <path
         d="M3 7H21M3 12H21M3 17H21"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
         stroke="currentColor"
       />
     </svg>
