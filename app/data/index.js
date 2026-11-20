@@ -40,7 +40,7 @@ export const data = {
       ],
     },
     heroImage: {
-      src: '/images/person-focused-on-learning.jpg',
+      src: '/images/person-focused-on-learning.png',
       alt: 'Person focused on learning',
     },
     upperBadgeHighlight: '120+',

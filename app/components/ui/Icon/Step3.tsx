@@ -1,0 +1,25 @@
+import type { SVGProps } from 'react'
+
+export default function Step3({
+  className,
+  ...props
+}: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 56 56"
+      fill="none"
+      className={className}
+      aria-label="Step 3 icon"
+      {...props}
+    >
+      <path
+        d="M0 12C0 5.37258 5.37258 0 12 0H44C50.6274 0 56 5.37258 56 12V44C56 50.6274 50.6274 56 44 56H12C5.37258 56 0 50.6274 0 44V12Z"
+        fill="#FFF1C2"
+      />
+      <path
+        d="M8 38C8 32.4772 12.4772 28 18 28C23.5228 28 28 32.4772 28 38C28 43.5228 23.5228 48 18 48C12.4772 48 8 43.5228 8 38Z"
+        fill="#E9D659"
+      />
+    </svg>
+  )
+}
