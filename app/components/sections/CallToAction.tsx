@@ -21,14 +21,13 @@ export default function CallToAction({ data }: CallToActionProps) {
           src="/images/call-to-action-icons-background.png"
           alt="Call to Action Icons Background"
           fill
-          objectFit="cover"
           aria-hidden="true"
           draggable={false}
-          className="pointer-events-none select-none"
+          className="pointer-events-none select-none object-cover"
         />
       </div>
 
-      <div className="section-container">
+      <div className="section-container relative">
         <div className="flex items-center justify-center">
           {data.avatars.map((avatar, index) => (
             <Image

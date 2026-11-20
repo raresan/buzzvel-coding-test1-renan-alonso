@@ -6,6 +6,8 @@ import Step2 from './Step2'
 import Step3 from './Step3'
 import Quote from './Quote'
 import Arrow from './Arrow'
+import Clock from './Clock'
+import Chat from './Chat'
 
 const ICONS = {
   logo: Logo,
@@ -15,6 +17,8 @@ const ICONS = {
   step3: Step3,
   quote: Quote,
   arrow: Arrow,
+  clock: Clock,
+  chat: Chat,
 } as const satisfies Record<string, ComponentType<SVGProps<SVGSVGElement>>>
 
 export interface IconProps extends SVGProps<SVGSVGElement> {

@@ -77,22 +77,20 @@ export default function Hero({ data }: HeroProps) {
             src={data.heroImage.srcMobile}
             alt={data.heroImage.alt}
             fill
-            objectFit="contain"
             priority
             aria-hidden="true"
             draggable={false}
-            className="pointer-events-none select-none lg:hidden"
+            className="pointer-events-none select-none lg:hidden object-contain"
           />
 
           <Image
             src={data.heroImage.src}
             alt={data.heroImage.alt}
             fill
-            objectFit="contain"
             priority
             aria-hidden="true"
             draggable={false}
-            className="pointer-events-none select-none hidden lg:block"
+            className="pointer-events-none select-none hidden lg:block object-contain"
           />
 
           <div className="bg-white rounded-xl absolute top-1.5 lg:top-4 left-2 lg:left-5.5 py-3 px-4 flex gap-3 items-center shadow-[0px_4px_24px_0px_#0000001A]">
@@ -111,7 +109,7 @@ export default function Hero({ data }: HeroProps) {
                 src="/images/rating-stars.png"
                 alt="Rating Stars"
                 fill
-                objectFit="contain"
+                className="object-contain"
               />
             </div>
 
