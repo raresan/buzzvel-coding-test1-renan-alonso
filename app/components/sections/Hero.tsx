@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import type { ClickableProps } from '../ui/Clickable'
 
 import Clickable from '../ui/Clickable'
+import Button from '../ui/Button'
 
 interface SocialProof {
   highlightText: string
@@ -39,8 +40,11 @@ export default function Hero({ data }: HeroProps) {
           <p>{data.description}</p>
 
           <div>
-            <Clickable {...data.primaryCta} />
-            <Clickable {...data.secondaryCta} />
+            <Button href={data.primaryCta.href}>{data.primaryCta.label}</Button>
+
+            <Button href={data.secondaryCta.href} variant="secondary">
+              {data.secondaryCta.label}
+            </Button>
           </div>
 
           <div>
