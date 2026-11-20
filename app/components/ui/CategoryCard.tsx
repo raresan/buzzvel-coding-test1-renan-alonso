@@ -18,7 +18,7 @@ export default function CategoryCard({
   return (
     <div className="border border-line rounded-2xl p-6 lg:p-7 flex flex-col items-start justify-between gap-5.5">
       <div>
-        <div className="text-primary-blue px-2 py-1 bg-primary-blue-light inline-block rounded-md">
+        <div className="text-primary-blue font-semibold text-xs px-2 py-1 bg-primary-blue-light inline-block rounded-md">
           {id}
         </div>
 

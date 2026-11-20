@@ -2,7 +2,6 @@ import Image, { StaticImageData } from 'next/image'
 
 import type { ClickableProps } from '../ui/Clickable'
 
-import Clickable from '../ui/Clickable'
 import Button from '../ui/Button'
 
 interface SocialProof {
