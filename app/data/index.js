@@ -143,6 +143,7 @@ export const data = {
   },
 
   testimonial: {
+    icon: 'quote',
     quote:
       'The lessons are short enough to fit into my week, but detailed enough that I actually leave with something I can use.',
     author: {

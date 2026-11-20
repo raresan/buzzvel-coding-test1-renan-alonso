@@ -9,7 +9,7 @@ export default function Step3({
       viewBox="0 0 56 56"
       fill="none"
       className={className}
-      aria-label="Step 3 icon"
+      aria-hidden="true"
       {...props}
     >
       <path
