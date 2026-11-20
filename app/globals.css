@@ -55,11 +55,11 @@
   }
 
   h1 {
-    @apply font-jakarta font-extrabold text-[4rem] leading-[1.1] tracking-tight text-ink-primary;
+    @apply font-jakarta font-extrabold text-[2.5rem] lg:text-[4rem] leading-[1.1] tracking-tight text-ink-primary;
   }
 
   h2 {
-    @apply font-jakarta font-extrabold text-5xl leading-[1.17] tracking-tight text-ink-primary;
+    @apply font-jakarta font-extrabold text-[2rem] lg:text-5xl leading-[1.17] tracking-tight text-ink-primary;
   }
 
   h3 {
@@ -67,7 +67,7 @@
   }
 
   h4 {
-    @apply font-jakarta font-bold text-xl leading-[1.6] text-ink-primary;
+    @apply font-jakarta font-bold text-xl leading-[1.4] lg:leading-[1.6] text-ink-primary;
   }
 
   h5 {
@@ -76,5 +76,5 @@
 }
 
 @utility section-container {
-  @apply w-full max-w-7xl mx-auto px-5 lg:px-20;
+  @apply w-full max-w-7xl mx-auto px-5 py-15 lg:px-20 lg:py-25;
 }

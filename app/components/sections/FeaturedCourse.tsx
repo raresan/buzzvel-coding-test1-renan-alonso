@@ -60,10 +60,13 @@ export default function FeaturedCourse({ data }: FeatureCourseProps) {
           <div>
             <Button href={data.primaryCta.href} variant="tertiary">
               {data.primaryCta.label}
+              {/* <Icon name="arrow" /> */}
             </Button>
 
             <Button href={data.secondaryCta.href} variant="ghost">
               {data.secondaryCta.label}
+
+              {/* <Icon name="arrow" /> */}
             </Button>
           </div>
         </div>

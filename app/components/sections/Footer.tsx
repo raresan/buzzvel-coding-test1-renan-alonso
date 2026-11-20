@@ -17,7 +17,7 @@ interface FooterProps {
 export default function Footer({ data }: FooterProps) {
   return (
     <footer className="bg-dark-blue text-ink-white-tertiary">
-      <div className="section-container">
+      <div className="section-container pb-5 lg:pt-20 lg:pb-10">
         <div>
           <div>
             <div>{data.logoText}</div>

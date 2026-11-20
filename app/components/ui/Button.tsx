@@ -10,20 +10,19 @@ export type ButtonProps = ClickableProps & {
 }
 
 const BASE_CLASSES =
-  'inline-flex items-center justify-center gap-2 font-jakarta font-semibold rounded-lg transition-colors cursor-pointer disabled:opacity-50 disabled:pointer-events-none'
+  'text-sm inline-flex items-center justify-center font-bold rounded-lg transition-colors cursor-pointer'
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
-  primary: 'bg-primary-blue text-white hover:opacity-90',
-  secondary:
-    'bg-light-yellow text-ink-primary border border-line hover:bg-yellow',
-  tertiary: 'bg-secondary-yellow text-ink-primary hover:opacity-90',
-  ghost: '',
+  primary: 'bg-primary-blue text-white',
+  secondary: 'bg-white text-ink-primary border border-line',
+  tertiary: 'bg-secondary-yellow text-ink-primary',
+  ghost: 'text-ink-white-secondary',
 }
 
 const SIZE_CLASSES: Record<ButtonSize, string> = {
-  sm: 'text-sm px-4 py-2',
-  md: 'text-base px-5 py-2.5',
-  lg: 'text-base px-6 py-3.5',
+  sm: 'w-full lg:w-auto lg:px-5 h-11',
+  md: 'w-full lg:w-auto lg:px-7 h-13',
+  lg: 'w-full lg:w-auto lg:px-7 h-13.5',
 }
 
 export default function Button({

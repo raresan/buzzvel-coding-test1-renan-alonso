@@ -14,7 +14,7 @@ interface HeaderProps {
 export default function Header({ data }: HeaderProps) {
   return (
     <header className="bg-light-yellow border-b border-line">
-      <div className="section-container">
+      <div className="section-container py-4 lg:py-3">
         <div>{data.logoText}</div>
 
         <nav>
